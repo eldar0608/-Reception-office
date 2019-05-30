@@ -1,9 +1,9 @@
 package kg.it.receptionoffice.repository;
 
-import kg.it.receptionoffice.model.EnrolleeInfo;
+import kg.it.receptionoffice.model.AcademicSubject;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface EnrolleeInfoRepository extends JpaRepository<EnrolleeInfo, Integer> {
+public interface AcademicSubjectRepository extends JpaRepository<AcademicSubject, Integer> {
 }
