@@ -1,4 +1,4 @@
 package kg.it.receptionoffice.service;
 
-public class CitezenshipService {
+public class ApplicantProgressService {
 }

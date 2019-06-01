@@ -10,8 +10,8 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Getter
 @Setter
-@Table(name = "region")
-public class Region {
+@Table(name = "users")
+public class Users {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,4 +20,19 @@ public class Region {
 
     @Column(name = "name")
     private String name;
+
+    @Column(name = "surname")
+    private String surname;
+
+    @Column(name = "patroname")
+    private String patroname;
+
+    @Column(name = "email")
+    private String email;
+
+    @Column(name = "password")
+    private String password;
+
+    @Column(name = "role_id")
+    private int roleId;
 }

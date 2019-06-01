@@ -1,16 +1,22 @@
 package kg.it.receptionoffice.model;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name = "Country")
-@SequenceGenerator(name = "seq_country", initialValue = 1, sequenceName = "seq_country", allocationSize = 1)
+@NoArgsConstructor
+@Getter
+@Setter
+@Table(name = "country")
 public class Country {
 
 
     @Id
-    @GeneratedValue(generator = "seq_country", strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
 

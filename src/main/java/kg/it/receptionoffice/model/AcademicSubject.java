@@ -1,5 +1,6 @@
 package kg.it.receptionoffice.model;
 
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,8 +11,8 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Getter
 @Setter
-@Table(name = "region")
-public class Region {
+@Table(name = "academicsubject")
+public class AcademicSubject {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
